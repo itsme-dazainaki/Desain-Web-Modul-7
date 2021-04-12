@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Desain Responsif</title>
+            <meta name="viewport" content="width-device-width,
+            initial-scale=1.0">
+
+            <style type="text/css">
+            #wrapper{
+                margin: auto;
+                width: 100%;
+                background: url(floral2.jpg);
+            }
+
+            #header{
+                background-color: black;
+                opacity: 75%;
+                border-top-right-radius: 50px;
+                border-top-left-radius: 50px;
+                width: auto;
+                height: 150px;
+                margin: 10px 0 0 0;
+            }
+
+            #judul {
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            #nav{
+                margin: auto;
+                padding: 20px;
+                height: 200px;
+                border: 2px solid palegreen;
+            }
+
+            .box{
+                float: left; /*atau bisa diganti display: inline-block;*/
+                /*display: inline-block; /*atau bisa diganti float*/ 
+                width: 22%;
+                margin: 0 2% 0 0;
+                height: 120px;
+                background-color: plum;
+                border: 2px solid plum;
+            }
+
+            #footer{
+                background-color: black;
+                opacity: 75%;
+                padding: 20px 0 0 0;
+                height: 90px;
+                clear: both;
+                margin: 10px 0 0 0;
+                text-align: center;
+                color:white;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+
+            /*Tablet*/
+            @media only screen and (max-width:768px){
+                #nav{
+                    height: 360px;
+                }
+
+                .box{
+                    width: 45%;
+                    margin: 0 4% 20px 0;
+                }
+            }
+
+            /*Smartphone*/
+            @media only screen and (max-width:375px){
+                #nav{
+                    height: 640px;
+                }
+
+                .box{
+                    width: 100%;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+            </style>
+    </head>
+    <body>
+
+        <div id="wrapper">
+            <div id="header">
+                <div id="judul">
+                    <h2>Header</h2>
+                </div>                
+            </div>
+
+            <div id="nav">
+                <h2>Services</h2>
+                <div class="box">BOX 1</div> 
+                <div class="box">BOX 2</div> 
+                <div class="box">BOX 3</div> 
+                <div class="box">BOX 4</div> 
+            </div>
+
+            <div id="footer">
+                &copy Copyright 2021. All right Reserved <br> Radaza Putri Hanaki <br> K3520063
+            </div>
+        </div>
+
+    </body>
+</html>
